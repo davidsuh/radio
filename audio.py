@@ -15,21 +15,30 @@ class audio:
 		# MUX control GPIO setup
 		GPIO.setup(20, GPIO.OUT)
 		GPIO.setup(21, GPIO.OUT)
+		
+		# start on system audio
+		GPIO.output(20, 0)
+		GPIO.output(21, 1)
 
 	def bt_volume_up():
 		GPIO.output(5, 0)
+		GPIO.output(5, 1)
 
 	def bt_volume_down():
 		GPIO.output(26, 0)
+		GPIO.output(26, 1)
 
 	def bt_prev_track():
 		GPIO.output(6, 0)
+		GPIO.output(6, 1)
 
 	def bt_next_track():
 		GPIO.output(19, 0)
+		GPIO.output(19, 1)
 
 	def bt_play_pause():
 		GPIO.output(13, 0)
+		GPIO.output(13, 1)
 
 	def system_en():
 		GPIO.output(20, 0)
