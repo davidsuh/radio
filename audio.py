@@ -19,7 +19,7 @@ class audio:
 	def bt_volume_up():
 		GPIO.output(5, 0)
 
-	def bt_volume_down();
+	def bt_volume_down():
 		GPIO.output(26, 0)
 
 	def bt_prev_track():
