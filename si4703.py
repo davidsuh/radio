@@ -69,7 +69,7 @@ class si4703:
 #        si4703.write_registry(self)
 #        sleep(.1)
 
-        si4703.SYS_CONFIG_2.VOLUME = 7
+        si4703.SYS_CONFIG_2.VOLUME = 15
         si4703.CHANNEL.CHAN = 85
         si4703.CHANNEL.TUNE = 1
         
